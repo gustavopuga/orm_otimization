@@ -1,4 +1,4 @@
-package com.example.usermanagement.my_app.controller;
+package com.example.usermanagement.orm_otimization.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

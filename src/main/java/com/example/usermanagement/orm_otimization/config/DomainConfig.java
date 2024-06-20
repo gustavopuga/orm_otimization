@@ -1,4 +1,4 @@
-package com.example.usermanagement.my_app.config;
+package com.example.usermanagement.orm_otimization.config;
 
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.Configuration;

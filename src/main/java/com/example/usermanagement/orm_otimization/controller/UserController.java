@@ -1,9 +1,10 @@
-package com.example.usermanagement.my_app.controller;
+package com.example.usermanagement.orm_otimization.controller;
 
-import com.example.usermanagement.my_app.model.User;
-import com.example.usermanagement.my_app.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import com.example.usermanagement.orm_otimization.model.User;
+import com.example.usermanagement.orm_otimization.service.UserService;
 
 import java.util.List;
 

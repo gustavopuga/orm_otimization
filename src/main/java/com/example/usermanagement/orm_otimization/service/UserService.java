@@ -1,9 +1,10 @@
-package com.example.usermanagement.my_app.service;
+package com.example.usermanagement.orm_otimization.service;
 
-import com.example.usermanagement.my_app.model.User;
-import com.example.usermanagement.my_app.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import com.example.usermanagement.orm_otimization.model.User;
+import com.example.usermanagement.orm_otimization.repository.UserRepository;
 
 import java.util.List;
 

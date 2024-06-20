@@ -1,4 +1,4 @@
-package com.example.usermanagement.my_app.model;
+package com.example.usermanagement.orm_otimization.model;
 
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 import org.springframework.cache.annotation.Cacheable;
