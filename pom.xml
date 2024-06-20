@@ -9,9 +9,9 @@
         <relativePath /><!-- lookup parent from repository -->
     </parent>
     <groupId>java.com.example.usermanagement</groupId>
-    <artifactId>my-app</artifactId>
+    <artifactId>orm_otimization</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>my-app</name>
+    <name>orm_otimization</name>
 
     <properties>
         <java.version>21</java.version>
