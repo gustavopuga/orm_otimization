@@ -1,11 +1,32 @@
-<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:noNamespaceSchemaLocation="http://www.ehcache.org/ehcache.xsd"
-         xmlns="http://www.ehcache.org/ehcache.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://www.ehcache.org/v3"
+    xmlns:jsr107="http://www.ehcache.org/v3/jsr107"
+    xsi:schemaLocation="
+            http://www.ehcache.org/v3 http://www.ehcache.org/schema/ehcache-core-3.0.xsd
+            http://www.ehcache.org/v3/jsr107 http://www.ehcache.org/schema/ehcache-107-ext-3.0.xsd">
 
-    <cache name="com.example.usermanagement.model.User"
-           maxEntriesLocalHeap="1000"
-           timeToLiveSeconds="600"/>
-    <cache name="com.example.usermanagement.model.Address"
-           maxEntriesLocalHeap="1000"
-           timeToLiveSeconds="600"/>
-</ehcache>
+    <cache alias="userCache">
+        <key-type>java.lang.Long</key-type>
+        <value-type>com.example.usermanagement.model.User</value-type>
+        <expiry>
+            <ttl unit="seconds">600</ttl>
+        </expiry>
+        <resources>
+            <heap unit="entries">1000</heap>
+        </resources>
+    </cache>
+
+    <cache alias="addressCache">
+        <key-type>java.lang.Long</key-type>
+        <value-type>com.example.usermanagement.model.Address</value-type>
+        <expiry>
+            <ttl unit="seconds">600</ttl>
+        </expiry>
+        <resources>
+            <heap unit="entries">1000</heap>
+        </resources>
+    </cache>
+
+</config>
+
